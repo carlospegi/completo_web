@@ -43,7 +43,8 @@
 
         <div class="informacion-evento">
 
-          <div class="clearfix">    <!--  -->
+          <div class="clearfix">
+            <!--  -->
             <p class="fecha"><i class="fas fa-calendar-alt"></i>12-03-21</p>
             <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Armenia, Quindio</p>
           </div>
@@ -61,22 +62,69 @@
       <div class="logo">
         <img src="./img/logo.svg" alt="logo gdlwebcamp">
       </div>
-    
-    <div class="menu-movil">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <nav class="menu-principal">
-      <a href="#">Conferencia</a>
-      <a href="#">Calendario</a>
-      <a href="#">Invitados</a>
-      <a href="#">Reservaciones</a>
-    </div>
-  </nav>
-  </div>
+
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu-principal clearfix">
+        <a href="#">Conferencia</a>
+        <a href="#">Calendario</a>
+        <a href="#">Invitados</a>
+        <a href="#">Reservaciones</a>
+    </div> <!-- contenedor -->
+    </nav>
+  </div><!-- barra -->
+
+  <section class="seccion contenedor">
+    <h2>la mejor conferencia de diseño web en español</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia velit magni obcaecati officia nobis!
+      Eligendi optio soluta vel doloribus iusto labore, possimus culpa enim cumque non! Nulla, ipsum nam!</p>
+
+  </section><!-- seccion -->
+
+  <section class="programa">
+    <div class="contenedor-video">
+      <video autoplay loop poster="./img/bg-talleres.jpg">
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.ogv" type="video/ogv">
+
+      </video>
+    </div><!-- vontenedor-video -->
+
+    <div class="contenido-programa">
+      <div class="contenedor">
+        <div class="programa-evento">
+          <h2>programa del evento</h2>
+          <nav class="menu-programa">
+            <a href="#talleres"><i class="fas fa-code"></i>talleres</a>
+            <a href="#conferencias"><i class="far fa-comments"></i>conferencias</a>
+            <a href="#seminarios"><i class="fas fa-university"></i>seminarios</a>
+          </nav>
+          <div id="talleres" class="info-curso ocultar clearfix">
+          <div class="detalle-evento">
+            <h3>HTML , CSS , JavaScript</h3>
+            <p><i class="far fa-clock"></i>16:00 hs</p>
+            <p><i class="far fa-calendar-alt"></i>12 de febreso</p>
+            <p><i class="fas fa-user-tie"></i>Carlos Perez</p>
+          </div>
+          <div class="detalle-evento">
+            <h3>Responsive Web Design</h3>
+            <p><i class="far fa-clock"></i>09:00 hs</p>
+            <p><i class="far fa-calendar-alt"></i>13 de febreso</p>
+            <p><i class="fas fa-user-tie"></i>Juan Lopez</p>
+          </div>
+          <a href="#" class="button float-right">Ver Todas</a>
+        </div>
+        </div>
+      </div>
 
 
+    </div>
+
+  </section><!-- programa -->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

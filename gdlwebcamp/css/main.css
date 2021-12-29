@@ -1,21 +1,26 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -28,27 +33,29 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,30 +69,34 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
+
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 
 /* 
    font-family: 'Open Sans', sans-serif;
@@ -93,346 +104,450 @@ textarea {
    font-family: 'PT Sans', sans-serif;
  */
 
-
- html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
 
-
-body{
-  background-color: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* globales */
-.seccion{
-  padding: 30px 0;
+
+img {
+    width: 100%;
 }
-.seccion p{
-  font-size: 1.2em;
-  text-align: center;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-h2{
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.4em;
-  text-transform: uppercase;
-  text-align: center;
+
+.seccion {
+    padding: 30px 0;
 }
-h2::after{
-  content: "";
-  margin: 0 auto;
-  background-image: url(../img/separador.png);
-  width: 100px;
-  height: 30px;
-  display: block;
-  color: #ff4918;
+
+.seccion p {
+    font-size: 1.2em;
+    text-align: center;
 }
-h3{
-  font-size: 1.7em;
-  color: #ff4918;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0;
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
 }
-.button{
-  padding: 10px 20px;
-  background-color: #ff4918;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.1em;
-  color: #fff;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-  font-weight: bold;
-transition: all .2s ease-in-out ;
+
+h2::after {
+    content: "";
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    width: 100px;
+    height: 30px;
+    display: block;
+    color: #ff4918;
 }
-.button:hover{
-  background-color: #e33000;
+
+h3 {
+    font-size: 1.7em;
+    color: #ff4918;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
 }
-.contenedor{
-  width: 95%;
-  margin: 0 auto;
+
+.button {
+    padding: 10px 20px;
+    background-color: #ff4918;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
 }
-.float-right{
-  float: right;
+
+.button:hover {
+    background-color: #e33000;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.float-right {
+    float: right;
 }
 
 @media (min-width: 768px) {
-  .contenedor{
-    width: 93%;
-    
-  }
+    .contenedor {
+        width: 93%;
+    }
 }
+
 
 /* ------   */
-div.hero{
-  background-image: url(../img/encabezado.jpg);
-  height: 100vh;
-  background-position: top center;
-  background-size: cover ;
+
+div.hero {
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
 }
-div.contenido-header{
-  padding-top: 40px;
-}
-@media (min-width: 768px) {
-	div.contenido-header{
-    padding-top: 10px;
-  }
-}
-nav.redes-sociales{
-  text-align: center;
-}
-nav.redes-sociales a{
-  color: #fff;
-  font-size: 30px;
-  margin-right: 8px;
-}
-nav.redes-sociales a:last-of-type{
-  margin-right:0;
-}
-div.informacion-evento{
-  text-align: center;
-  color: #fff;
-  max-width: 90%;
-  margin: 10px auto;
+
+div.contenido-header {
+    padding-top: 40px;
 }
 
 @media (min-width: 768px) {
-	div.informacion-evento{
-    max-width: 80%;
-   
-  }
-}
-div.informacion-evento p {   
-  display: inline;
-  font-size: 17px;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  div.informacion-evento p {   
-    
-    font-size: 20px;
-  
-  }
-}
-div.informacion-evento p i{
-  color: crimson;
-  font-size: 1.5rem;
-  margin-right: 10px;
-
-}
-@media (min-width: 768px) {
-  div.informacion-evento p i{
- 
-    font-size: 2rem;
-  
-  }
-}
- p.fecha{
-  float: left;
-}
-p.ciudad{
-  float: right;
+    div.contenido-header {
+        padding-top: 10px;
+    }
 }
 
-h1.nombre-sitio{
-  font-size: 7.9vw;
-  text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0;
-}
-@media (min-width: 768px) {
-  h1.nombre-sitio{
-    font-size: 9.5vw;
-    line-height: 1;
-  
-  } 
+nav.redes-sociales {
+    text-align: center;
 }
 
-p.slogan.sl{  /*  sl especifico */
-  text-transform: none;
+nav.redes-sociales a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 8px;
 }
-p.slogan span{
-  font-weight: bold;
+
+nav.redes-sociales a:last-of-type {
+    margin-right: 0;
 }
+
+div.informacion-evento {
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+    div.informacion-evento {
+        max-width: 80%;
+    }
+}
+
+div.informacion-evento p {
+    display: inline;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    div.informacion-evento p {
+        font-size: 20px;
+    }
+}
+
+div.informacion-evento p i {
+    color: crimson;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    div.informacion-evento p i {
+        font-size: 2rem;
+    }
+}
+
+p.fecha {
+    float: left;
+}
+
+p.ciudad {
+    float: right;
+}
+
+h1.nombre-sitio {
+    font-size: 7.9vw;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    h1.nombre-sitio {
+        font-size: 9.5vw;
+        line-height: 1;
+    }
+}
+
+p.slogan.sl {
+    /*  sl especifico */
+    text-transform: none;
+}
+
+p.slogan span {
+    font-weight: bold;
+}
+
 
 /* barra */
 
-div.barra{
-  background-color: #353535;
-  padding: 10px 0;
+div.barra {
+    background-color: #353535;
+    padding: 10px 0;
 }
 
 div.logo {
-  width: 60%;
-  float: left;
- 
-}
-div.logo img{
-  width: 100%;
-}
-@media (min-width: 768px) {
-  div.logo {
-    width: 30%;
-    
-  }
+    width: 60%;
+    float: left;
 }
 
-nav.menu-principal{
-  display: block;
-
-  
+div.logo img {
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-  nav.menu-principal{
+    div.logo {
+        width: 30%;
+    }
+}
+
+nav.menu-principal {
     display: block;
-    float: right;
-    width: 70%;
-    text-align: right;
-    display: block;
-  }
-}
-nav.menu-principal a{
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  text-decoration: none;
- font-size: 1.1em;
-text-transform: uppercase;
-display: inline-block;
-padding: 10px 12px;
-transition: .2s all ease-in-out;
-width: 100%;
-text-align: center;
-margin-bottom: 10px;
-
-
-}
-nav.menu-principal a:last-of-type{
-  border: 1px solid  #ff4918;
-  color: #ff4918;
-}
-nav.menu-principal a:last-of-type:hover{
-  background-color: #fff; /* . */
-}
-nav.menu-principal a:hover{
-background-color: #ff4918;
 }
 
 @media (min-width: 768px) {
-  nav.menu-principal a{
+    nav.menu-principal {
+        display: block;
+        float: right;
+        width: 70%;
+        text-align: right;
+        display: block;
+    }
+}
+
+nav.menu-principal a {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     text-decoration: none;
-   font-size: 1.1em;
-  text-transform: uppercase;
-  margin-right: 8px;
-margin-top: 8px;
-width: auto;
-text-align: center;
-margin-bottom: 0;
-display: inline-block;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 12px;
+    transition: .2s all ease-in-out;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-  }
-  nav.menu-principal a:last-of-type{
-    margin-right: 0;
-    
+nav.menu-principal a:last-of-type {
+    border: 1px solid #ff4918;
+    color: #ff4918;
+}
 
-  }
+nav.menu-principal a:last-of-type:hover {
+    background-color: #fff;
+    /* . */
 }
-div.menu-movil{
-  width: 60px;
- text-align: right;
- margin-top: 12px;
-  display: block;
-  float: right;
+
+nav.menu-principal a:hover {
+    background-color: #ff4918;
 }
-div.menu-movil:hover{
-  cursor: pointer;
-}
-div.menu-movil span{
-  
-  background-color: #fff;
-margin-bottom: 5px;
-  display: block;
-  height: 6px;
-}
+
 @media (min-width: 768px) {
-  div.menu-movil{
-
-   display: none;
-  }
+    nav.menu-principal a {
+        font-family: 'Oswald', sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        margin-right: 8px;
+        margin-top: 8px;
+        width: auto;
+        text-align: center;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    nav.menu-principal a:last-of-type {
+        margin-right: 0;
+    }
 }
+
+div.menu-movil {
+    width: 60px;
+    text-align: right;
+    margin-top: 12px;
+    display: block;
+    float: right;
+}
+
+div.menu-movil:hover {
+    cursor: pointer;
+}
+
+div.menu-movil span {
+    background-color: #fff;
+    margin-bottom: 5px;
+    display: block;
+    height: 6px;
+}
+
+@media (min-width: 768px) {
+    div.menu-movil {
+        display: none;
+    }
+}
+
+
 /* programa del evento */
-section.programa{
-  position: relative;
-} 
-div.contenedor-video{
-  max-width: 100%;
-  overflow-x: hidden;
 
+section.programa {
+    position: relative;
 }
-div.contenido-programa{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+
+div.contenedor-video {
+    max-width: 100%;
+    overflow-x: hidden;
 }
-div.programa-evento{
-  background-color: rgba(255, 255, 255, .8);
-padding: 15px;
-margin-top: 80px;
+
+div.contenido-programa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
+
+div.programa-evento {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 15px;
+    margin-top: 80px;
+}
+
 @media (min-width: 768px) {
-  .programa-evento{
-    width: 70%;
-  }
+    .programa-evento {
+        width: 70%;
+    }
 }
+
 @media (min-width: 992px) {
-  .programa-evento{
-    width: 50%;
-  }
+    .programa-evento {
+        width: 50%;
+    }
 }
-nav.menu-programa{
-border-bottom: 1px solid #ff4918;
-width: 100%;
-padding-bottom: 10px;
+
+nav.menu-programa {
+    border-bottom: 1px solid #ff4918;
+    width: 100%;
+    padding-bottom: 10px;
 }
-nav.menu-programa a{
-  margin-right: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  display: block;
-  text-align:center;
-  margin-bottom: 10px;
+
+nav.menu-programa a {
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
 @media (min-width: 768px) {
-  nav.menu-programa a{
-    display: inline;  
-  }
+    nav.menu-programa a {
+        display: inline;
+    }
 }
 
 nav.menu-programa a i,
-div.detalle-evento p i{
-  margin-right: 7px;
-  color: #ff4918;
-  font-size: 25px;
+div.detalle-evento p i {
+    margin-right: 7px;
+    color: #ff4918;
+    font-size: 25px;
 }
-div.detalle-evento{
-  margin-bottom: 10px;
-  border-bottom: 1px solid #000;
-  padding: 0 10px;
+
+div.info-curso {
+    padding-top: 25px;
 }
-div.detalle-evento:last-of-type{
-  border-bottom: none;
+
+div.detalle-evento {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding: 0 10px;
 }
-div.detalle-evento p{
-  padding-bottom: 10px;
-  font-size: 20px;
+
+div.detalle-evento:last-of-type {
+    border-bottom: none;
+}
+
+div.detalle-evento p {
+    padding-bottom: 6px;
+    font-size: 20px;
+}
+
+
+/* invitados */
+
+.lista-invitados li {
+    float: left;
+    padding: 10px;
+}
+
+@media (min-width: 480px) {
+    .lista-invitados li {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .lista-invitados li {
+        width: 33.3%;
+    }
+}
+
+div.invitado {
+    position: relative;
+    overflow: hidden;
+}
+
+div.invitado img {
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+}
+
+div.invitado img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+div.invitado p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ff4918;
+    font-family: 'Oswald', sans-serif;
+    transition: all .2s ease-in-out;
+}
+
+div.invitado:hover p {
+    bottom: -80px;
+    opacity: 0;
 }
 
 
@@ -440,14 +555,16 @@ div.detalle-evento p{
    Helper classes
    ========================================================================== */
 
+
 /*
  * Hide visually and from screen readers
  */
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -459,17 +576,18 @@ div.detalle-evento p{
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
+
 
 /*
  * Extends the .sr-only class to allow the element
@@ -479,22 +597,24 @@ div.detalle-evento p{
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -510,13 +630,14 @@ div.detalle-evento p{
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -525,15 +646,16 @@ div.detalle-evento p{
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -542,71 +664,60 @@ div.detalle-evento p{
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
-

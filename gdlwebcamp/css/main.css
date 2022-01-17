@@ -178,6 +178,13 @@ h3 {
     font-weight: bold;
     transition: all .2s ease-in-out;
 }
+.button.transparente{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.button.transparente:hover{
+    border-color: #ff4918;
+}
 .button.hollow,
 .button.hollow:hover{
     background-color: #fff;
@@ -739,7 +746,100 @@ footer.info-testimonial cite span{
     text-transform: none;
 }
 
+/* newsletter */
 
+div.newsletter{
+position: relative;
+height: auto;
+}
+div.newsletter::before{
+    background-image: url(../img/bg-newsletter.jpg);
+    content: "";
+
+}
+div.newsletter .contenido{
+    padding: 100px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+div.newsletter .contenido p{
+font-size: 1.6em;
+text-transform: lowercase;
+}
+div.newsletter .contenido h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* cuenta regresiva */
+
+.cuenta-regresiva ul li{
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .cuenta-regresiva ul li{
+        float: left;
+        width: 25%;
+    }
+}
+
+/* footer */
+
+.site-footer{
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.site-footer .contenedor > div {
+    color: #fff;
+    padding: 0 20px;
+    font-size: 12px;
+}
+@media (min-width: 768px) {
+    .site-footer .contenedor > div{
+        float: left;
+        width: 33.3%;
+    }
+    .site-footer .contenedor.menu{
+        text-align: left;
+    }
+}
+.site-footer p{
+    margin-top: 0;
+}
+
+.site-footer h3{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+   
+}
+.site-footer h3 span{
+    color: #ff4918;
+}
+
+.site-footer .ultimos-tweets li{
+    margin-bottom: 20px;
+}
+
+.site-footer nav.redes-sociales{
+    text-align: left;
+}
+.copyright{
+    background-color: #2e2e2e;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0;
+}
 
 /* ==============================
 

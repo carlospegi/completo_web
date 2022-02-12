@@ -11,7 +11,11 @@
     <meta property="og:type" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <script src="https://kit.fontawesome.com/598df43054.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap"
@@ -22,6 +26,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
 
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -76,7 +81,7 @@
                 <a href="#">Conferencia</a>
                 <a href="#">Calendario</a>
                 <a href="#">Invitados</a>
-                <a href="#">Reservaciones</a>
+                <a href="registro.html">Reservaciones</a>
             </nav>
         </div>
         <!-- contenedor -->
@@ -125,9 +130,40 @@
                             <p><i class="far fa-clock"></i>09:00 hs</p>
                             <p><i class="far fa-calendar-alt"></i>13 de febreso</p>
                             <p><i class="fas fa-user-tie"></i>Juan Lopez</p>
+                            <a href="#" class="button float-right">Ver Todas</a>
                         </div>
-                        <a href="#" class="button float-right">Ver Todas</a>
                     </div>
+                    <div id="conferencias" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Como ser freelancer</h3>
+                            <p><i class="far fa-clock"></i>10:00 hs</p>
+                            <p><i class="far fa-calendar-alt"></i>12 de febreso</p>
+                            <p><i class="fas fa-user-tie"></i>Gregorio sanchez</p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Tecnologias del futuro</h3>
+                            <p><i class="far fa-clock"></i>17:00 hs</p>
+                            <p><i class="far fa-calendar-alt"></i>13 de febreso</p>
+                            <p><i class="fas fa-user-tie"></i>Susan sanchez</p>
+                            <a href="#" class="button float-right">Ver Todas</a>
+                        </div>
+                    </div>
+                    <div id="seminarios" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Dise;o UI/UX para moviles</h3>
+                            <p><i class="far fa-clock"></i>17:00 hs</p>
+                            <p><i class="far fa-calendar-alt"></i>13 de febreso</p>
+                            <p><i class="fas fa-user-tie"></i>Harold Garcia</p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Aprende a programar en una ma;ana</h3>
+                            <p><i class="far fa-clock"></i>10:00 hs</p>
+                            <p><i class="far fa-calendar-alt"></i>13 de febreso</p>
+                            <p><i class="fas fa-user-tie"></i>Susana Rivera</p>
+                            <a href="#" class="button float-right">Ver Todas</a>
+                        </div>
+                    </div>
+
                     <!-- info-curso -->
                 </div>
                 <!-- programa-evento -->
@@ -189,16 +225,16 @@
         <div class="contenedor">
             <ul class="resumen-evento clearfix">
                 <li>
-                    <p class="numero">6</p> invitados
+                    <p class="numero"></p> invitados
                 </li>
                 <li>
-                    <p class="numero">15</p> talleres
+                    <p class="numero"></p> talleres
                 </li>
                 <li>
-                    <p class="numero">3</p> dias
+                    <p class="numero"></p> dias
                 </li>
                 <li>
-                    <p class="numero">9</p> conferencias
+                    <p class="numero"></p> conferencias
                 </li>
             </ul>
         </div>
@@ -306,16 +342,16 @@
         <div class="cuenta-regresiva contenedor">
             <ul class="clearfix">
                 <li>
-                    <p class="numero">80</p>dias
+                    <p id="dias" class="numero"></p>dias
                 </li>
                 <li>
-                    <p class="numero">15</p>horas
+                    <p id="horas" class="numero"></p>horas
                 </li>
                 <li>
-                    <p class="numero">5</p>minutos
+                    <p id="minutos" class="numero"></p>minutos
                 </li>
                 <li>
-                    <p class="numero">30</p>segundos
+                    <p id="segundos" class="numero"></p>segundos
                 </li>
             </ul>
         </div>
@@ -354,12 +390,18 @@
             </div>
         </div>
         <p class="copyright">
-            todos los derechos reservados GDLWEBCAMP 2022 
+            todos los derechos reservados GDLWEBCAMP 2022
         </p>
     </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/vendor/jquery.animateNumber.min.js"></script>
+    <script src="js/vendor/jquery.lettering.js"></script>
+    <script src="js/vendor/jquery.countdown.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -378,3 +420,40 @@
 </body>
 
 </html>
+
+<!-- 
+       <h2>galeria-imagenes</h2>
+        <div class=" lightbox  ">
+            <a href="./img/galeria/01.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/01.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/02.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/02.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/03.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/03.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/04.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/04.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/05.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/05.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/06.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/06.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/07.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/07.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/08.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/08.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/09.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/09.jpg" alt="image-1">
+            </a>
+            <a href="./img/galeria/10.jpg" data-lightbox="galeria">
+                <img src="./img/galeria/thumbs/10.jpg" alt="image-1">
+            </a>
+        </div>
+    
+ -->
